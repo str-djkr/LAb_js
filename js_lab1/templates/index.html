@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Ваше портфоліо</title>
+
+  <!-- Підключення Bootstrap з CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <!-- Додавання деяких стилів Bootstrap для тіней та анімацій -->
+    
+  <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+
+  <header class="bg-dark text-white text-center py-5">
+    <h1 class="display-4">Галюк Олег</h1>
+    <p class="lead">Junior Python Розробник</p>
+  </header>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Головна</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Про мене</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Портфоліо</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Контакти</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="container mt-5">
+    <h2 class="text-center mb-4">Моє портфоліо</h2>
+
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card shadow">
+          <img src="../media/prj_1.png" class="card-img-top" alt="Зображення проекту 1">
+          <div class="card-body">
+            <h5 class="card-title">To-Do List</h5>
+            <p class="project-description">Проста система управління завданнями з використанням Django.</p>
+            <a href="#" class="btn btn-primary">Деталі</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card shadow">
+          <img src="../media/prj_2.png" class="card-img-top" alt="Зображення проекту 2">
+          <div class="card-body">
+            <h5 class="card-title">Міні-блог</h5>
+            <p class="project-description">Веб-сайт з міні-блогом на Flask з функціоналом аутентифікації.</p>
+            <a href="#" class="btn btn-primary">Деталі</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card shadow">
+          <img src="../media/prj_3.jpeg" class="card-img-top" alt="Зображення проекту 3">
+          <div class="card-body">
+            <h5 class="card-title">Веб-скрапінг Instagram</h5>
+            <p class="project-description">Писав бота для веб-скрапінгу Instagram з метою автоматичної розсилки.</p>
+            <a href="#" class="btn btn-primary">Деталі</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container mt-5">
+  <h2 class="text-center mb-4">Про мене</h2>
+
+  <div class="row">
+    <div class="col-md-6">
+      <p>Привіт, я Junior Python Розробник із великим захопленням та безмежним інтересом до створення програмного забезпечення. У своїй кар'єрі я пройшов шлях від простих веб-сайтів до складних систем, завдяки глибокому розумінню Python і ефективному використанню веб-фреймворків, зокрема Django та Flask.</p>
+
+      <p>Моя робота охоплює все, від розробки API для зручної взаємодії з фронтендом до створення систем автентифікації та авторизації. Впевнено працюю з реляційними базами даних, такими як PostgreSQL та SQLite, і завжди стараюсь забезпечити ефективну взаємодію з бекендом.</p>
+
+      <p>У своїх проектах я не тільки розширював свої технічні навички, але й впроваджував системи управління даними та аналітичні інструменти. Усе це робить мене готовим до нових викликів і прагнення постійно навчатися та розвиватися.</p>
+    </div>
+
+    <div class="col-md-6">
+      <img src="../media/me.jpg" alt="моє фото" class="img-fluid rounded-circle shadow">
+    </div>
+  </div>
+</section>
+    <section class="container mt-5">
+  <h2 class="text-center mb-4">Зв'яжіться зі мною</h2>
+
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <form>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputName">Ім'я</label>
+            <input type="text" class="form-control" id="inputName" placeholder="Ваше ім'я">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputEmail">Email</label>
+            <input type="email" class="form-control" id="inputEmail" placeholder="Ваш Email">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputMessage">Повідомлення</label>
+          <textarea class="form-control" id="inputMessage" rows="4" placeholder="Ваше повідомлення"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Надіслати</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+    
+      <footer>
+    <div class="container">
+      <p class="mb-0">Зв'язатися зі мною:</p>
+      <p class="mb-0">Email: olezka.galyuk@gmail.com</p>
+      <p>GitHub: https://github.com/str-djkr</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
