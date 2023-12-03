@@ -1,0 +1,53 @@
+<!-- public/login.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" type="text/css" href="./styles.css" />
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/news">News</a></li>
+      <li><a href="/profile">Profile</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <h2>Вхід</h2>
+    <!-- Додана форма для логіна -->
+    <form id="loginForm">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required />
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required />
+
+      <button type="button" onclick="handleLogin()">Login</button>
+    </form>
+    <p id="errorMessage" style="color: red;"></p>
+  </div>
+
+  <script>
+    // Функція обробки логіна (викликається з кнопки)
+    function handleLogin() {
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+      const errorMessage = document.getElementById('errorMessage');
+
+      // Перевірка фейкових даних
+      if (username === 'Admin' && password === '12345') {
+        // Збереження інформації про авторизацію в localStorage
+        localStorage.setItem('isAuthenticated', 'true');
+
+        // Перенаправлення на сторінку /profile
+        window.location.href = '/profile';
+      } else {
+        errorMessage.textContent = 'Ім\'я користувача або пароль введені не вірно';
+      }
+    }
+  </script>
+</body>
+</html>
